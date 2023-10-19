@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-19T09:06:50.739Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="HqXbdsr9VLg_m2IZN3gW" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-19T09:22:12.764Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="C6Hrtr6QEtsVtw1ZJmxr" version="22.0.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1184" dy="1101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -137,8 +137,49 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Gen7DUi7adraW_FfG2y3-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Gen7DUi7adraW_FfG2y3-11" value="移码：补码的基础上符号位取反" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="110" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Gen7DUi7adraW_FfG2y3-15" target="Gen7DUi7adraW_FfG2y3-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-15" value="IEEE754单精度浮点数" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="740" width="300" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Gen7DUi7adraW_FfG2y3-15" source="Gen7DUi7adraW_FfG2y3-17" target="Gen7DUi7adraW_FfG2y3-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-17" value="得到原码" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Gen7DUi7adraW_FfG2y3-15">
+          <mxGeometry x="90" y="30" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-27" value="求阶码：&lt;br&gt;在 IEEE 754 浮点数标准中，阶码是用移码表示的，移码的定义：移码 = 真值 + 偏置值（127）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Gen7DUi7adraW_FfG2y3-15">
+          <mxGeometry x="42.5" y="90" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Gen7DUi7adraW_FfG2y3-15" source="Gen7DUi7adraW_FfG2y3-28" target="Gen7DUi7adraW_FfG2y3-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-28" value="阶前面补齐0凑到8位" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Gen7DUi7adraW_FfG2y3-15">
+          <mxGeometry x="80" y="170" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-29" value="计算尾数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Gen7DUi7adraW_FfG2y3-15">
+          <mxGeometry x="75" y="280" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-30" value="组合（符号位+阶码+尾数） 并输出" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Gen7DUi7adraW_FfG2y3-15">
+          <mxGeometry x="60" y="380" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.582;entryY=0.075;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Gen7DUi7adraW_FfG2y3-15" source="Gen7DUi7adraW_FfG2y3-27" target="Gen7DUi7adraW_FfG2y3-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.431;entryY=-0.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="Gen7DUi7adraW_FfG2y3-15" source="Gen7DUi7adraW_FfG2y3-29" target="Gen7DUi7adraW_FfG2y3-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gen7DUi7adraW_FfG2y3-32" value="运行结束" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="1280" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
