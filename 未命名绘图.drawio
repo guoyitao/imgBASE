@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-19T12:01:21.698Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="u6_X-0m-1ZgMA_USt6y8" version="22.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-19T12:04:19.743Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="pN1wv9ztwPQuvDpv_kad" version="22.0.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1184" dy="1094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -154,8 +154,8 @@
         <mxCell id="Gen7DUi7adraW_FfG2y3-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Gen7DUi7adraW_FfG2y3-15" source="Gen7DUi7adraW_FfG2y3-17" target="Gen7DUi7adraW_FfG2y3-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Gen7DUi7adraW_FfG2y3-17" value="转换成二进制" style="rounded=0;whiteSpace=wrap;html=1;" parent="Gen7DUi7adraW_FfG2y3-15" vertex="1">
-          <mxGeometry x="90" y="30" width="100" height="30" as="geometry" />
+        <mxCell id="Gen7DUi7adraW_FfG2y3-17" value="十进制数转换成二进制" style="rounded=0;whiteSpace=wrap;html=1;" parent="Gen7DUi7adraW_FfG2y3-15" vertex="1">
+          <mxGeometry x="90" y="30" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gen7DUi7adraW_FfG2y3-27" value="求阶码：&lt;br&gt;把二进制转换成1.xxxx*2^n ,阶码=127+n" style="rounded=0;whiteSpace=wrap;html=1;" parent="Gen7DUi7adraW_FfG2y3-15" vertex="1">
           <mxGeometry x="42.5" y="90" width="195" height="60" as="geometry" />
@@ -179,7 +179,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gen7DUi7adraW_FfG2y3-32" value="运行结束" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="490" y="1280" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="1210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
